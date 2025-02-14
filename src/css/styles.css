@@ -215,3 +215,38 @@ color: #b86d07;
 #stor-features .feature+.feature {
     border-right: 3px solid #ff0000;
 }
+.heading {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.custom-thumbnail img{
+    height: 250px;
+    width: 100%;
+    max-width: 250px;
+}
+.custom-thumbnail {
+    border: 2px solid #DDDDDB;
+    padding: 10px;
+    cursor: pointer;
+}
+.custom-thumbnail:hover {
+    border-color: #53ccd5;
+    background-color: #57fff497;
+}
+.custom-thumbnail h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.price {
+    color: #53ccd7;
+    font-size: 18px;
+    font-weight: 700;
+}
+.rating .active {
+    color: #9c9c9c;
+}
+.rating .active {
+    color: #ff7700;
+    font-size: 14px;
+}
