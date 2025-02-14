@@ -192,3 +192,8 @@ color: #b86d07;
 .custom-carousel-indications-primary.active {
     border-color: #ff7700 !important;
 }
+#carousel-feature .carousel-control-prev .fa-chevron-right,
+ #carousel-feature .carousel-control-next .fa-chevron-left {
+    color: #676767;
+    font-size: 38px;
+}
