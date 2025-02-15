@@ -250,3 +250,45 @@ color: #b86d07;
     color: #ff7700;
     font-size: 14px;
 }
+.overlay {
+    position: absolute;
+    height: 250px;
+    width: calc(100% - 20px); ;
+    background-color:#53ccd779;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.overlay:hover {
+    opacity: 1;
+}
+.overlay button {
+    background-color: #FFF;
+    color: #53ccd7;
+    font-size: 15px;
+}
+.custom-thumbnail .sale {
+    padding: 5px 10px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+.custom-thumbnail .sale::after {
+    content: '-';
+}
+.carousel-indicators2 li {
+    width: 13px !important;
+    height: 13px !important;
+    margin: 2px !important;
+    border-radius: 2px !important;
+    background-color: #DDDDDB !important;
+    
+}
+.carousel-indicators2 {
+    bottom: -50px;
+}
+.carousel-indicators2 li.active {
+    background-color: #575757 !important;
+}
