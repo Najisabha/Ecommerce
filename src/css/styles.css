@@ -229,6 +229,7 @@ color: #b86d07;
     border: 2px solid #DDDDDB;
     padding: 10px;
     cursor: pointer;
+    margin-bottom: 50px;
 }
 .custom-thumbnail:hover {
     border-color: #53ccd5;
@@ -287,8 +288,35 @@ color: #b86d07;
     
 }
 .carousel-indicators2 {
-    bottom: -50px;
+    bottom: -20px !important;
 }
 .carousel-indicators2 li.active {
     background-color: #575757 !important;
+}
+.panel{
+    border: 4px solid #eef0ea;
+    border-radius: 2px;
+    padding: 20px;
+}
+
+.panel h4 ,
+.panel .price {
+    font-size: 130% ;
+    margin-bottom: 15px;
+}
+.custom-text-muted{
+    color: #a9a9a9;
+}
+.arrow-btn {
+    background-color: #fff ;
+    color: #868686;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+#row-brands h3.heading {
+    border-top: 1px solid #ebebeb;
+    padding-top: 25px;
+
 }
