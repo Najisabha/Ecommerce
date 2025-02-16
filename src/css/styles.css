@@ -289,6 +289,7 @@ color: #b86d07;
 }
 .carousel-indicators2 {
     bottom: -20px !important;
+    list-style: none;
 }
 .carousel-indicators2 li.active {
     background-color: #575757 !important;
@@ -319,4 +320,86 @@ color: #b86d07;
     border-top: 1px solid #ebebeb;
     padding-top: 25px;
 
+}
+#brand-logos {
+    background-color: #dbeefa;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #868686;
+}
+#brand-logos img {
+    margin-left: 25px;
+    margin-right: 25px;
+    max-width: 100px;
+    max-height: 100px;
+}
+#footer-nav {
+    background-color: #1f1e1e;
+    padding: 50px 0 40px;
+    background-image: url(../images/bg_footer_1.png), url(../images/bg_footer_2.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 110% 0 , -10% -150%;
+}
+.footer-nav-links {
+    margin: 30px 0 ;
+}
+.footer-nav-links a {
+    margin-left: 30px;
+    color: #555555;
+    font-weight: bold;
+    text-decoration: none;
+}
+.newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #292929;
+
+}
+.newsletter form{
+    max-width: 250px;
+}
+.newsletter form label{
+    margin: 27px 0 16x;
+    font-size: 12px;
+    font-weight: bold;
+    color: #555555;
+}
+.newsletter form input {
+    background-color: #313131;
+    opacity: 0.6;
+    border: none;
+    height: 38px;
+}
+.custom-btn-warning {
+    color: #000;
+    background-color: #f8ad47;
+    border-color: #f8ad47;
+}
+.custom-btn-warning:hover,
+.custom-btn-warning:focus,
+.custom-btn-warning:active {
+    background-color: #b86d07;
+    border-color: #b86d07;
+}
+.newsletter form button{
+    border-radius: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-style: 14px;
+    padding: 6px 12px 5px;
+    color: initial;
+    height: 38px;
+}
+#footer-copyright-social {
+    background-color: #151515 ;
+    color: #303030;
+    font-size: 12px;
+    padding: 30px 0;
+    font-weight: 700;
+}
+#footer-copyright-social a {
+    color: #303030;
+    margin: 0 10px;
+    text-decoration: none;
 }

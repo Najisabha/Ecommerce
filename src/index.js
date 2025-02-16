@@ -10,5 +10,8 @@ document.querySelectorAll('.add-to-card-btn').forEach(item => {
         alert('Item added to card');
     })
 });
+// copy right year
+document.getElementById('copy-right-year').textContent = new Date().getFullYear();
+
 // باقي الكود الخاص بك
 console.log('Hello, world!');
