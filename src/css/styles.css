@@ -403,3 +403,51 @@ color: #b86d07;
     margin: 0 10px;
     text-decoration: none;
 }
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+@media (max-width: 600px) {
+
+}
+@media (max-width: 800px) {
+
+}
+@media (max-width: 1000px) {
+    .custom-navbar{
+        padding: 15px 25px 30px;
+    }
+    .custom-navbar .container {
+        max-width: 100%;
+
+    }
+    .navbar-header {
+        display: flex;
+        width: 100%;
+        margin-bottom: 22px;
+    }
+    .navbar-header .btn-icon {
+        float: left !important;
+    }
+    .inline-form {
+        width: 100%;
+        border-top: 1ox solid #ebebeb;
+        border-bottom: 1ox solid #ebebeb;
+        padding: 10px ;
+    }
+    .inline-form .dropdown {
+        display: none;
+    }
+    .inline-form .carousel-form-control {
+        width: 90%;
+    }
+    .inline-form .search-btn {
+        width: 10%;
+    }
+}
+@media (max-width: 1200px) {
+    .custom-navbar .navbar-nav li a.nav-link {
+        padding: 6px;
+    }
+}
