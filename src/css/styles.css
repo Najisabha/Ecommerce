@@ -408,11 +408,82 @@ color: #b86d07;
     outline: none !important;
     box-shadow: none !important;
 }
-@media (max-width: 600px) {
-
+@media (max-width: 550px) {
+    .inline-form .carousel-form-control {
+        width: 80% !important;
+    }
+    .inline-form .search-btn {
+        width: 20% !important;
+    }
+    .custom-thumbnail img {
+        height: 160px !important;
+        width: 100%;
+    }
+    .custom-thumbnail {
+        margin-bottom: 0px;
+    }
+    .clearfix h4 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .add-to-card-btn {
+        font-size: 16px;
+        padding: 5px !important;
+    }
 }
-@media (max-width: 800px) {
-
+@media (max-width: 765px) {
+    #carousel-feature{
+        padding-bottom: 25px;
+    }
+    #carousel-feature,
+    #carousel-feature  .product-details {
+        height: auto;
+    }
+    #carousel-feature .product-details{
+        top: -2px;
+        text-align: center;
+    }
+    #carousel-feature .carousel-item img {
+        height: 250px;
+        width: 250px !important;
+        margin: 0 auto;
+    }
+    #brand-logos img {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+    .footer-nav {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .newsletter form {
+        width: 100%;
+        max-width: 100%; 
+        padding: 0 20px; 
+    }
+    
+    .newsletter .inputgroup {
+        width: 100%; 
+    }
+    
+    .newsletter form input {
+        width: 85%; 
+    }
+    
+    .newsletter form button {
+        width: 15%; 
+    }
+    .rating {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 1000px) {
     .custom-navbar{
@@ -423,12 +494,16 @@ color: #b86d07;
 
     }
     .navbar-header {
-        display: flex;
+        display: block;
         width: 100%;
         margin-bottom: 22px;
     }
     .navbar-header .btn-icon {
         float: left !important;
+        height: 40px;
+        width: 40px;
+        margin-right: 5px;
+        margin-left: 5px;
     }
     .inline-form {
         width: 100%;
@@ -444,6 +519,62 @@ color: #b86d07;
     }
     .inline-form .search-btn {
         width: 10%;
+    }
+    .custom-navbar .navbar-nav li a.nav-link {
+        padding: 20px;
+        margin-top: 20px;    
+    }
+    .navbar-collapse {
+        border-top: 1px solid #ebebeb;
+        margin-top: 20px;
+        padding-top: 8px;
+    }
+    #carousel-feature .carousel-indicators {
+        margin-right: -4%;
+    }
+    .overlay {
+        display: none;
+    }
+    .add-to-card-btn {
+        color: #868686;
+        border: 1px solid #868686;
+        margin-top: 8px;
+        font-weight: 400;
+    }
+    .custom-thumbnail img {
+        height: 200px;
+    }
+    #carousel-most-sold .carousel-control-next i {
+        padding: 15px;
+        background-color: #53ccd5;
+        border-radius: 50%;
+    }
+    #carousel-most-sold .carousel-control-prev i {
+        padding: 15px;
+        background-color: #53ccd5;
+        border-radius: 50%;
+    }
+    .row-brands .carousel-inner img {
+        width: 200px !important;
+        height: auto !important;
+    }
+    .row-brands .float-start,
+    .row-brands .float-end {
+        padding: 25px;
+        transform: scale(1.6);
+    }
+    .panel {
+        padding-bottom: 100px;
+    }
+    #copyright ,
+    #social-icons {
+        width: 100%;
+        text-align: center;
+
+    }
+    #social-icons{
+        padding-top: 20px;
+        font-size: 150%;
     }
 }
 @media (max-width: 1200px) {
