@@ -14,13 +14,20 @@ document.querySelectorAll('[data-product-qunatity]').forEach(item => {
         let total_monye = 0 ;
         document.querySelectorAll('[data-product-info]').forEach(product => {
             const pricePerUnite = product.getAttribute('data-product-price');
-            const qunatity = product.querySelector('[data-price-quantity]').value;
+            const qunatity = product.querySelector('[data-product-qunatity]').value;
             const totalPriceForProduct = pricePerUnite * qunatity ;
-            totalPriceForProduct = total_monye + totalPriceForProduct ;
+            total_monye += totalPriceForProduct ;
         })
+        document.getElementById('total-price-for-all-product').innerHTML = total_monye + '$';
     })
 }
 );
+
+document.querySelectorAll('[ data-remove-for-card]').forEach(item => {
+    item.addEventListener('click',() => {
+        item.closest('[data-product-info]').remove()
+    })
+})
 // شيئ اخر 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
