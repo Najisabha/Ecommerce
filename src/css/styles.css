@@ -655,6 +655,9 @@ width: 50%;
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    .hide-on-small {
+        display: none;
+    }
 }
 @media (max-width: 1000px) {
     .custom-navbar{

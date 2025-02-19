@@ -63,11 +63,6 @@ document.querySelectorAll('.size-option input[type="radio"]').forEach(item => {
     })
 }
 )
-document.querySelectorAll('[ data-remove-for-card]').forEach(item => {
-    item.addEventListener('click',() => {
-        item.closest('[data-product-info]').remove()
-    })
-})
 
 // copy right year
 document.getElementById('copy-right-year').textContent = new Date().getFullYear();

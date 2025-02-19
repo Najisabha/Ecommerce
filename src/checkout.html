@@ -117,7 +117,7 @@
                                 <th> المنتج </th>
                                 <th> السعر </th>
                                 <th> العدد المطلوب </th>
-                                <th>مجموع السعر </th>
+                                <th class="hide-on-small">مجموع السعر </th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -125,7 +125,7 @@
                             <tr data-product-info data-product-price="400">
                                 <td>
                                     <div class="custom-media d-flex">
-                                        <img src="./images/adidas_3.jpg" alt="adidas">
+                                        <img src="./images/adidas_3.jpg" alt="adidas" class=" d-none d-md-block">
                                         <div class="">
                                             <h4> تيشيرت رجالي</h4>
                                             <div class="custom-text-muted">
@@ -134,7 +134,9 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td> $400 </td>
+                                <td> 
+                                    $400 
+                                </td>
                                 <td> 
                                     <select name="product1" class="custom-form-control qunatity" data-product-qunatity>
                                         <option value="1"> 1 </option>
@@ -143,19 +145,20 @@
                                         <option value="4" selected> 4 </option>
                                     </select>
                                 </td>
-                                <td class="total-price-for-product">
+                                <td class="total-price-for-product hide-on-small">
                                     $1600
                                 </td>
                                 <td>
-                                    <button class="btn custom-btn-outline-danger btn-outline-danger"  data-remove-for-card>
-                                        حذف 
+                                    <button class="btn custom-btn-outline-danger btn-outline-danger" data-remove-for-card>
+                                        <i class="fas fa-trash-alt d-md-none d-block"></i>
+                                        <span class=" d-md-block d-none">حذف</span> 
                                     </button>
                                 </td>
                             </tr>
                             <tr data-product-info data-product-price="200">
                                 <td>
                                     <div class="custom-media d-flex">
-                                        <img src="./images/adidas_1.jpg" alt="adidas">
+                                        <img src="./images/adidas_1.jpg" alt="adidas" class=" d-none d-md-block">
                                         <div class="">
                                             <h4> تيشيرت رجالي</h4>
                                             <div class="custom-text-muted">
@@ -164,7 +167,9 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td> $200 </td>
+                                <td> 
+                                    $200
+                                </td>
                                 <td> 
                                     <select name="product1" class="custom-form-control qunatity " data-product-qunatity>
                                         <option value="1"> 1 </option>
@@ -173,12 +178,13 @@
                                         <option value="4" > 4 </option>
                                     </select>
                                 </td>
-                                <td class="total-price-for-product">
+                                <td class="total-price-for-product hide-on-small">
                                    $200
                                 </td>
                                 <td>
                                     <button class="btn custom-btn-outline-danger btn-outline-danger" data-remove-for-card>
-                                        حذف 
+                                        <i class="fas fa-trash-alt d-md-none d-block"></i>
+                                        <span class=" d-md-block d-none">حذف</span> 
                                     </button>
                                 </td>
                             </tr>
@@ -186,7 +192,7 @@
                         <tfoot> 
                             <tr>
                                 <td colspan="5" class="total-price custom-text-muted">
-                                    <span>السعر الاجماعي لجميع المنتجات </span>
+                                    <span class="d-md-block d-none">السعر الاجماعي لجميع المنتجات </span>
                                     <span id="total-price-for-all-product"> 2000 </span>
                                     <span> دولار  </span>
                                 </td>
