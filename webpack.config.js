@@ -86,9 +86,23 @@ module.exports = {
       filename: "product.html",
       template: "./src/product.html"
     }),
+    new HtmlWebpackPlugin({
+      filename: "checkout.html",
+      template: "./src/checkout.html"
+    }),
+    new HtmlWebpackPlugin({
+      filename: "Payment.html",
+      template: "./src/Payment.html"
+    }),
+    new HtmlWebpackPlugin({
+      filename: "Contact-us.html",
+      template: "./src/Contact-us.html"
+    }),
     new MiniCssExtractPlugin({
       filename: "css/styles.css",
+      
     }),
+    
     new CssMinimizerPlugin(),
   ]
 };
