@@ -22,12 +22,12 @@ document.querySelectorAll('[data-product-qunatity]').forEach(item => {
     })
 }
 );
-
 document.querySelectorAll('[ data-remove-for-card]').forEach(item => {
     item.addEventListener('click',() => {
         item.closest('[data-product-info]').remove()
     })
 })
+
 // شيئ اخر 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
