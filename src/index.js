@@ -2,6 +2,19 @@ window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.min.js');
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+// حساب سعر المنتج 
+
+document.querySelectorAll('[data-product-qunatity]').forEach(item =>{
+    item .addEventListener('change',() => {
+        const newQuantity = item.value;
+        const parent = item.closest('[data-product-info]');
+        const pricePerUbit = parent.getAttribute('data-product-price');
+        const total = newQuantity * pricePerUbit ;
+        parent.querySelector('.total-price-for-product').innerHTML = total + $ ;
+
+    })
+}
+);
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
