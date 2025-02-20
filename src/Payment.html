@@ -145,7 +145,7 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label>
-                                <input type="radio" name="payment-method" value="on_card" checked>
+                                <input type="radio" name="payment-method" value="on_delivery" >
                                 بطاقة الاتمانية 
                             </label>
                         </div>
@@ -164,7 +164,105 @@
                     </div>
                 </div>
             </div>
+            <!-- العربة للشراء -->
+            <div class="container">
+            <div class="mt-4">
+                <h1 class="heading custom-heading"> طلبك </h1>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th> المنتج </th>
+                                <th> السعر </th>
+                                <th> العدد المطلوب </th>
+                                <th class="hide-on-small">مجموع السعر </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-product-info data-product-price="400">
+                                <td>
+                                    <div class="custom-media d-flex">
+                                        <img src="./images/adidas_3.jpg" alt="adidas" class=" d-none d-md-block">
+                                        <div class="">
+                                            <h4> تيشيرت رجالي</h4>
+                                            <div class="custom-text-muted">
+                                                ملابس رجالي 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td> 
+                                    $400 
+                                </td>
+                                <td> 
+                                    <select name="product1" class="custom-form-control qunatity" data-product-qunatity>
+                                        <option value="1"> 1 </option>
+                                        <option value="2"> 2 </option>
+                                        <option value="3"> 3 </option>
+                                        <option value="4" selected> 4 </option>
+                                    </select>
+                                </td>
+                                <td class="total-price-for-product hide-on-small">
+                                    $1600
+                                </td>
+                                <td>
+                                    <button class="btn custom-btn-outline-danger btn-outline-danger" data-remove-for-card>
+                                        <i class="fas fa-trash-alt d-md-none d-block"></i>
+                                        <span class=" d-md-block d-none">حذف</span> 
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr data-product-info data-product-price="200">
+                                <td>
+                                    <div class="custom-media d-flex">
+                                        <img src="./images/adidas_1.jpg" alt="adidas" class=" d-none d-md-block">
+                                        <div class="">
+                                            <h4> تيشيرت رجالي</h4>
+                                            <div class="custom-text-muted">
+                                                ملابس رجالي 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td> 
+                                    $200
+                                </td>
+                                <td> 
+                                    <select name="product1" class="custom-form-control qunatity " data-product-qunatity>
+                                        <option value="1"> 1 </option>
+                                        <option value="2" selected> 2 </option>
+                                        <option value="3"> 3 </option>
+                                        <option value="4" > 4 </option>
+                                    </select>
+                                </td>
+                                <td class="total-price-for-product hide-on-small">
+                                   $200
+                                </td>
+                                <td>
+                                    <button class="btn custom-btn-outline-danger btn-outline-danger" data-remove-for-card>
+                                        <i class="fas fa-trash-alt d-md-none d-block"></i>
+                                        <span class=" d-md-block d-none">حذف</span> 
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot> 
+                            <tr>
+                                <td colspan="5" class="total-price custom-text-muted">
+                                    <span class="d-md-block d-none">السعر الاجماعي لجميع المنتجات </span>
+                                    <span id="total-price-for-all-product"> 2000 </span>
+                                    <span> دولار  </span>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <button class="btn btn-outline-danger" style="margin: 20px 0;" >
+                        اكمل عملية الشراء <i class="fas fa-cart-shopping"></i>
+                    </button>
+            </div>
+            </div>
          </from>
+         
     </div>
     </div>
     <!-- footer -->
