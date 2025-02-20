@@ -110,7 +110,7 @@ document.querySelectorAll('#Form-checkout input[name="payment-method"]').forEach
     item.addEventListener('change', () => {
         const paymentmethod = item.value;
         const creditCardinputs = document.querySelectorAll('#credit_card_info input');
-        if (paymentmethod == 'on_card'){
+        if (paymentmethod != 'on_card'){
             creditCardinputs.forEach(i => {
                 i.style.display = 'none';
             })
