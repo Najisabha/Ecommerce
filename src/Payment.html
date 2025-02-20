@@ -8,8 +8,8 @@
 </head>
 <body>
     <div class="container-fluid">
-        <!-- Navbar -->
-        <div class="row">
+    <!-- Navbar -->
+    <div class="row">
             <nav class="navbar custom-navbar navbar-expand-lg">
                 <div class="container px-0">
                     <div class="navbar-header">
@@ -92,7 +92,80 @@
                     </div>
                 </div>
             </nav>
+    </div>
+    <div class="container">
+        <!-- القائمة الفرعية  -->
+        <div class="container">
+            <div class="row" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb custom-breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="./index.html"> الصفحة الرئيسية </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="./checkout.html"> عربة الشراء </a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <span>  صفحة الدفع </span>
+                    </li>
+                </ol>
+            </div>
         </div>
+        <!-- نموذج الدفع  -->
+         <from id="Form-checkout">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="heading"> بياناتك الشخصية </h3>
+                    <div class="row">
+                        <div class="col-md-6 mb-3"><input type="text" class="form-control custom-form-control custom-input-details" placeholder=" الاسم الاول " name="First_Name" required></div>
+                        <div class="col-md-6 mb-3"><input type="text" class="form-control custom-form-control custom-input-details" placeholder=" الاسم الاخير " name="First_Name" required></div>
+                        <div class="col-md-6 mb-3"><input type="email" class="form-control custom-form-control custom-input-details" placeholder=" البريد الالكتروني " name="email" required></div>
+                        <div class="col-md-6 mb-3"><input type="text" class="form-control custom-form-control custom-input-details" placeholder=" المنطقة " name="area" required></div>
+                        <div class="col-md-6 mb-3">
+                        <select class="form-control custom-form-control custom-input-details" name="country" required>
+                            <option disabled selected value=""> تختار للدولة  </option>
+                            <option value="PS"> فلسطين </option>
+                            <option value="SA"> السعودية </option>
+                            <option value="JO"> الاردن </option>
+                            <option value="EG"> مصر </option>
+                            <option value="SY"> سوريا </option>
+                        </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <select class="form-control custom-form-control custom-input-details" name="City" required id="paymentCity">
+                                <option disabled selected value=""> اختار المدينة </option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3"><input type="number" class="form-control custom-form-control custom-input-details" placeholder=" رقم الهاتف " name="Number" required></div>
+                        <div class="col-md-6 mb-3"><input type="text" class="form-control custom-form-control custom-input-details" placeholder=" العنوان الاول " name="address1" required></div>
+                        <div class="col-md-6 mb-3"><input type="text" class="form-control custom-form-control custom-input-details" placeholder=" العنوان الثاني " name="address2" ></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="heading"> بيانات الدفع  </h3>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label>
+                                <input type="radio" name="payment-method" value="on_card" checked>
+                                بطاقة الاتمانية 
+                            </label>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label>
+                                <input type="radio" name="payment-" value="on_delivery" >
+                                الدفع عند التسليم
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row" id="credit_card_info">
+                        <div class="col-md-6 mb-3"><input type="number" class="form-control custom-form-control custom-input-details" name="credit_card_number" placeholder=" رقم البطاقة " required ></div>
+                        <div class="col-md-6 mb-3"><input type="number" class="form-control custom-form-control custom-input-details" name="credit_card_expiration_month" min="1" max="12" placeholder=" شهر الانتهاء " required ></div>
+                        <div class="col-md-6 mb-3"><input type="number" class="form-control custom-form-control custom-input-details" name="credit_card_expiration_year"  min="2025" max="2036" placeholder=" سنة الانتهاء " required ></div>
+                        <div class="col-md-6 mb-3"><input type="number" class="form-control custom-form-control custom-input-details" name="credit_card_CVV" placeholder="CVV" required ></div>
+                    </div>
+                </div>
+            </div>
+         </from>
+    </div>
     </div>
     <!-- footer -->
     <footer class="row">
