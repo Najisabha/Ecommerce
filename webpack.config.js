@@ -98,6 +98,10 @@ module.exports = {
       filename: "Contact-us.html",
       template: "./src/Contact-us.html"
     }),
+      new HtmlWebpackPlugin({
+      filename: "search.html",
+      template: "./src/search.html"
+    }),
     new MiniCssExtractPlugin({
       filename: "css/styles.css",
       
