@@ -16,13 +16,13 @@ body {
 }
 /* الشريط العلوي */
 .custom-navbar {
-    border-bottom: 3px solid #eef0ea;
+    border-bottom: 3px solid #1048ff;
     width: 100%;
-    background-color: #FFF;
+    background-color: #2ce6ff;
     padding: 15px 0;
 }
 .custom-form-control, .dropdown a.custom-btn{
-    border: 1px solid #ebebeb;
+    border: 1px solid #1048ff;
     box-shadow: none;
     border-radius: 2px;
     color: black;
@@ -30,23 +30,23 @@ body {
     padding: 6px 12px 6px ;
 }
 .custom-form-control:focus, .dropdown a.custom-btn:focus {
-    border-color: #c2210e;
-    box-shadow: 0 0 2px 0 #c2210e;
+    border-color: #1048ff;
+    box-shadow: 0 0 2px 0 #1048ff;
 }
 .dropdown a.categories  {
     border-right: 0 !important;
     border-radius: 0;
 }
 .dropdown a.custom-btn:hover {
-    background-color: #d4d4d4;
+    background-color: #5197ff;
     border-color: #8c8c8c;
-    color: #ff3956;
+    color: #1048ff;
     transition: all 0.3s;
 }
 .dropdown a.custom-btn:focus {
-    background-color: #d4d4d4;
+    background-color: #1048ff;
     border-color: #8c8c8c;
-    color: #ff3956;
+    color: #1048ff;
     transition: all 0.3s;
 }
 .custom-dropdown-menu {
@@ -56,8 +56,8 @@ body {
 }
 
 .search-btn {
-    background-color: #ff3956;
-    border-color: #ff3956;
+    background-color: #1048ff;
+    border-color: #1048ff;
     color: #fff;
     padding: 5px 15px 7px;
     height: 38px;
@@ -71,8 +71,8 @@ body {
 .search-btn:active ,
 .search-btn:active:focus,
 .search-btn:active:hover {
-    background-color: #c2210e;
-    border-color: #c2210e;
+    background-color: #1048ff;
+    border-color: #1048ff;
     color: #fff;
     transition: all 0.3s;
 }
@@ -83,18 +83,19 @@ body {
     padding: 15px;
 }
 .custom-navbar .navbar-nav li.active a.nav-link {
-    color: #ff3956;
-    border-bottom: 2px solid #ff3956;
+    color: #1048ff;
+    border-bottom: 2px solid #1048ff;
 }
 .custom-navbar .navbar-nav li.active:hover a.nav-link{
-    background-color: #e7e7e7;
+    background-color: #5dffff;
+    border-radius: 5px;
 }
 .custom-dropdown-menu li a:hover {
 background-color: #ffe7ea;
 }
 .custom-navbar .btn-icon {
     background-color: transparent;
-    border-color: #ff3956;
+    border-color: #1048ff;
     color: #777;
     padding: 5px 10px ;
     border: 1px solid #ddd;
@@ -102,10 +103,10 @@ background-color: #ffe7ea;
     font-weight: 700;
     font-size: 14px;
 }
-/* قسم عرض الشرائح */
+/* carousel */
 #carousel-feature {
     height: 400px;
-    background-color: #f7fbf3;
+    background-color: #ff9c9c;
     padding-top: 25px;
 }
 #carousel-feature .product-details {
@@ -148,9 +149,10 @@ background-color: #ffe7ea;
 border-color: #b86d07;
 color: #b86d07;
 }
+/* best-seller */
 .sale {
     position: absolute;
-    background-color: #53ccd7;
+    background-color: #ff1515;
     color: #fff;
     font-weight: bold;
     font-size: 14px;
@@ -214,7 +216,7 @@ color: #b86d07;
     margin-bottom: 10px;
 }
 #stor-features .feature+.feature {
-    border-right: 3px solid #ff0000;
+    border-right: 3px solid #1048ff;
 }
 .heading {
     font-size: 24px;
@@ -300,7 +302,6 @@ color: #b86d07;
     border-radius: 2px;
     padding: 20px;
 }
-
 .panel h4 ,
 .panel .price {
     font-size: 130% ;
@@ -317,6 +318,7 @@ color: #b86d07;
     padding: 5px 10px;
     font-size: 12px;
 }
+/* brands */
 #row-brands h3.heading {
     border-top: 1px solid #ebebeb;
     padding-top: 25px;
@@ -392,6 +394,7 @@ color: #b86d07;
     color: initial;
     height: 38px;
 }
+/* footer */
 #footer-copyright-social {
     background-color: #151515 ;
     color: #303030;
@@ -557,8 +560,8 @@ width: 50%;
 }
 .custom-btn-outline-danger {
     background-color: transparent;
-    border-color: #ff3956;
-    color: #ff3956;
+    border-color: #1048ff;
+    color: #1048ff;
 }
 /*
 ------------------- Payment page ------------------
